@@ -1,0 +1,264 @@
+textarea, input, button { outline: none; }
+
+html, body
+{
+	font-family: 'Roboto';
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body
+{
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background-size: cover;
+	/*background-image: url("../img/bg.jpg");*/
+    background-attachment: fixed;
+
+    background-color: #eee;
+    color: #142020;
+}
+
+a
+{
+	/*color: #66CDAA;*/
+	text-decoration: none;
+	cursor: pointer;
+}
+
+header
+{
+	flex: none;
+
+	height: 4rem;
+	width: 100%;
+
+	text-align: center;
+	color: #fff;
+}
+
+header h1
+{
+	margin: 0;
+	padding: 0;
+
+	line-height: 4rem;
+}
+
+main
+{
+	height: calc(100% - 6rem);
+}
+
+footer
+{
+	flex: none;
+
+	height: 2rem;
+	width: 100%;
+
+	line-height: 2em;
+	text-align: center;
+}
+
+.column
+{
+	height: 50%;
+	width: 100%;
+
+	float: left;
+
+	position: relative;
+}
+
+.column.left
+{
+	height: 30%;
+}
+
+.column.right
+{
+	height: 70%;
+
+	font-size: 1.4vw;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	overflow-x: auto;
+    white-space: nowrap;
+}
+
+#output
+{
+
+}
+
+.column textarea
+{
+	resize: none;
+	float: left;
+
+	width: 100%;
+	height: 50%;
+
+	box-sizing: border-box;
+	padding: 1rem;
+
+	font-size: 1rem;
+}
+
+.column textarea.top
+{
+	height: 30%;
+}
+
+.column textarea.bottom
+{
+	height: 70%;
+}
+
+.level
+{
+	margin-bottom: 1.8vw;
+}
+
+.constituent
+{
+	display: inline-block;
+	position: relative;
+	border-bottom: 2px solid #111;
+}
+
+
+.constituent .function
+{
+	position: absolute;
+	
+	bottom: -140%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+
+    font-size: 0.8em;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	color: #111;
+	font-family: 'Fjalla One';
+
+	margin: 0;
+	margin-top: 1vw;
+}
+
+.column h3
+{
+	font-size: 5vw;
+}
+
+.column h4
+{
+	font-size: 3vw;
+}
+
+.column h5
+{
+	font-size: 2vw;
+}
+
+.column h6
+{
+	margin-top: 0;
+	font-size: 1.5vw;
+}
+
+#description
+{
+	width: 85%;
+	display: inline-block;
+	text-align: justify;
+}
+
+#introduction
+{
+	margin-top: 1vw;
+
+}
+
+button
+{
+	margin-top: 1vw;
+
+	cursor: pointer;
+
+	display: inline-block;
+	padding: 0.5vw;
+
+	background-color: #ffffff;
+	color: #111;
+
+	border: none;
+	border-radius: 5px;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	font-size: 2vw;
+	font-family: 'Ranga';
+}
+
+button i
+{
+	font-size: 1.4vw !important;
+	line-height: 1.4vw !important;
+}
+
+#information
+{
+	display: none;
+}
+
+#player
+{
+	display: none;
+}
+
+#controls
+{
+	width: 100%;
+
+	position: absolute;
+	bottom: 0;
+
+	padding-bottom: 1vw;
+}
+
+.divider
+{
+	width: 80%;
+	border-bottom: 1px solid #ffffff;
+
+	display: inline-block;
+}
+
+#map
+{
+	width: 100%;
+	height: 100%;
+}
+
+.overlay
+{
+	position: absolute;
+
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	background-color: rgba(0, 0, 0, 0.5);
+}
