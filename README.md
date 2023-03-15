@@ -1,6 +1,6 @@
 # Exercise visualisation tool for Nederlandse taalkunde I
 
-A visualisation tool for the course Nederlandse taalkunde I (F0AM8B/V0AM8B)
+A visualisation tool for the course [Nederlandse taalkunde I](https://onderwijsaanbod.kuleuven.be/syllabi/n/F0AM8BN.htm)
 
 [Click here to open the tool / Klik hier om de tool te openen](https://anthesevenants.github.io/ntk/)
 
