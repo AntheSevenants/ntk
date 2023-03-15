@@ -4,7 +4,6 @@
 <head>
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<script src="lib/trendy.js?v=2"></script>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +21,7 @@
 			<textarea class="form-control font-monospace top" autofocus id="sentence"
 				placeholder="Hij drong erop aan spoed te maken met de parlementaire behandeling van een hervorming die tot doel heeft de bevoegdheden van de president te beknotten.">Besluiteloosheid vermijden, daar was het hem altijd om te doen geweest.</textarea>
 		</div>
-		<div class="row pb-2 mx-1">
+		<div class="row pb-2 mx-1 position-relative">
 			<textarea class="form-control font-monospace bottom" id="correction" placeholder="A10 B22 C52 D24 EY51
 E24 FG23 HY50
 LY90
@@ -30,6 +29,10 @@ OY90
 N5 O10 PQ24 R22 SY30
 SW30 XY23">AB50 C50+ D20 E10 F40 G75 H50+ IJ22 K21
 A30 B21</textarea>
+			<div class="form-check form-switch d-inline-block position-absolute w-auto mt-2 me-1" style="right: 0; top: 0;">
+				<input class="form-check-input" type="checkbox" role="switch" id="constituentCodeModeSwitcher" checked>
+				<label class="form-check-label" for="constituentCodeModeSwitcher">2019-codering</label>
+			</div>
 		</div>
 		<div class="row flex-grow-1 mx-1 mb-3">
 			<div class="card w-100 h-100 p-0" id="output_wrapper">
@@ -41,6 +44,7 @@ A30 B21</textarea>
 	</main>
 	</div>
 
+	<script src="lib/trendy.js?v=2"></script>
 	<script>
 		boot();
 	</script>
