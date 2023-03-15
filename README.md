@@ -6,7 +6,7 @@ A visualisation tool for the course [Nederlandse taalkunde I](https://onderwijsa
 
 ## What is this tool?
 
-During spring of 2018, I built a visualisation tool for the course [Nederlandse taalkunde I](https://onderwijsaanbod.kuleuven.be/syllabi/n/F0AM8BN.htm) at KU Leuven. I have decided to open source this tool and make it available for everyone to use.
+During spring of 2018, I built a visualisation tool for the syntax exercises of the course [Nederlandse taalkunde I](https://onderwijsaanbod.kuleuven.be/syllabi/n/F0AM8BN.htm) at KU Leuven. I have decided to open source this tool and make it available for everyone to use.
 
 For the 2023 release, I updated to codebase to support the codings introduced in the 2019 revision of the handbook. At the same time, I also updated the interface.
 
