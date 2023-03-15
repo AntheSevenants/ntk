@@ -1,3 +1,7 @@
+body {
+    background-color: #eee !important;
+}
+
 .top {
     height: 4em;
 }
@@ -16,6 +20,7 @@
 
 #output {
     width: auto;
+    font-weight: 500;
 }
 
 .level
