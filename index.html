@@ -1,41 +1,45 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-		<link href="css/animate.css" rel="stylesheet" type="text/css">
-		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	
-		<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
-		<script src="lib/trendy.js?v=2"></script>
-	
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html class="h-100">
 
-		<title>Oefeningenvisualisator voor Nederlandse Taalkunde</title>
-  	</head>
-  <body onload="boot();">
-	<header>
-		<h1>Oefeningenvisualisator voor Nederlandse Taalkunde</h1>
+<head>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<script src="lib/trendy.js?v=2"></script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Oefeningenvisualisator voor Nederlandse Taalkunde</title>
+</head>
+
+<body class="h-100 d-flex flex-column">
+	<header class="container text-center py-4">
+		<h1>Oefeningenvisualisator voor Nederlandse Taalkunde I</h1>
+		<h4>door Anthe Sevenants</h4>
 	</header>
-	<main>
-		<div class="column left">
-			<textarea class="top" autofocus id="sentence" placeholder="Hij drong erop aan spoed te maken met de parlementaire behandeling van een hervorming die tot doel heeft de bevoegdheden van de president te beknotten.">Besluiteloosheid vermijden, daar was het hem altijd om te doen geweest.</textarea>
-			<textarea class="bottom" id="correction" placeholder="A10 B22 C52 D24 EY51
+	<main class="container-fluid flex-grow-1 d-flex flex-column">
+		<div class="row px-2 pb-2">
+			<textarea class="form-control font-monospace top" autofocus id="sentence"
+				placeholder="Hij drong erop aan spoed te maken met de parlementaire behandeling van een hervorming die tot doel heeft de bevoegdheden van de president te beknotten.">Besluiteloosheid vermijden, daar was het hem altijd om te doen geweest.</textarea>
+		</div>
+		<div class="row px-2">
+			<textarea class="form-control font-monospace bottom" id="correction" placeholder="A10 B22 C52 D24 EY51
 E24 FG23 HY50
 LY90
 OY90
 N5 O10 PQ24 R22 SY30
 SW30 XY23">AB51 C+H53 D26 E14 F40 G75 IJ27 K28
-A30 B23
-</textarea>
+A30 B23</textarea>
 		</div>
-		<div class="column right">
+		<div class="row flex-grow-1" id="output_wrapper">
 			<div id="output"></div>
 		</div>
 	</main>
-	<footer>
-		Ghemaeckt int jaere MMXVIII
-	</footer>
-  </body>
+	</div>
+
+	<script>
+		boot();
+	</script>
+</body>
+
 </html>
