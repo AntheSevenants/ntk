@@ -22,3 +22,5 @@ For the 2023 release, I updated to codebase to support the codings introduced in
 2. Type the sentence to be parsed in the top textbox
 3. Type the parsing code in the bottom textbox
 4. The sentence parse will appear below
+
+To enable the pre-2019 syntax, append `?pre2019` to the URL.
