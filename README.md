@@ -14,7 +14,8 @@ For the 2023 release, I updated to codebase to support the codings introduced in
 
 - support for both the pre-2019 and 2019 exercises syntax
 - instant rendering of sentence parses
-- constituent function codes translation
+- constituent function codes translation (for pre-2019 codes)
+- automatic error correction
 
 ## How to use
 
